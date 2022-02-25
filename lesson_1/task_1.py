@@ -1,7 +1,6 @@
 import subprocess
 from ipaddress import ip_address
 
-
 def host_ping(list_address, pakeg=3):
     result = {
         'Доступные узлы': [],
@@ -19,6 +18,7 @@ def host_ping(list_address, pakeg=3):
         else:
             print(f'{address} - Узел Недоступен')
             result['Недоступные узлы'].append(address)
+
     return result
 
 
